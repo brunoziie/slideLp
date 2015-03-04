@@ -3,73 +3,75 @@ SlideLp v2.2 - Responsivo + Touch + Full Screen
 
 Este plugin está sendo desenvolvido para facilitar a vida de muitas pessoas que pretendem desenvolver um site e precisam de um banner de destaque.
 
-Ainda estamos na versão 1.0, portanto existem algumas propriedades que ainda não foram desenvolvidas. Existem também alguns bugs a serem corrigidos, por favos, caso encontre algum, comentar o ocorrido para que possamos corrigi-los.
+Existem também alguns bugs a serem corrigidos, por favor, caso encontre algum, [crie uma issue](https://github.com/luizpaulo165/slideLp/issues) com os detalhes para que possamos corrigi-los.
 
 Demo
 ===============================
-Veja ele em funcionamento clicando <a href="http://slidelp.mostone.com.br" target="blank">aqui</a>
+Veja ele em funcionamento clicando [aqui](http://slidelp.mostone.com.br)
 
 Como usar
 ===============================
 
 Como usar o plugin:
 
-	1 - Você deve fazer o download do plugin;
-	2 - Descompatar;
-	3 - Dentro da pasta, acesse a pasta que possui o nome de "plugin", dentro dela estão dos os aquivos nessesários para o funcionamento do slideLp;
-	4 - Por fim, basta apenas adicionar os arquivos no seu projeto e pronto!
+1. Você deve fazer o [download](https://github.com/luizpaulo165/slideLp/archive/master.zip) do plugin;
+2. Descompatar;
+3. Dentro da pasta, acesse a pasta que possui o nome de "plugin", dentro dela estão dos os arquivos nessesários para o funcionamento do slideLp;
+4. Por fim, basta apenas adicionar os arquivos no seu projeto e pronto!
 
 OBS Importante!
 ===============================
 
-O slideLp foi feito usando tags HTML5, portanto alguns navegadores que não possuem essa tecnologia não conseguiram interpretar as tags, um exemplo pratico seria no IE7 ou IE8 onde os navegadores não possuem suporte a Html5, com isso o plugin não iria funcionar corretamente. Para resolver esse problemas usamos dois plugins js, são eles: 
+O slideLp foi feito usando tags HTML5, portanto alguns navegadores que não possuem suporte essa tecnologia não conseguirão interpretar as tags, um exemplo prático seria no IE7 ou IE8 onde os navegadores não possuem suporte ao HTML5, com isso o plugin não iria funcionar corretamente. Para resolver esse problemas usamos dois plugins js, são eles: 
 
-	 - Modernizr: Para mais informações acesse o site <a href="http://www.modernizr.com/">http://www.modernizr.com/</a>;
-	 - html5.js;
+ - Modernizr: Para mais informações acesse o site <a href="http://www.modernizr.com/">http://www.modernizr.com/</a>;
+ - html5.js;
 
- Aplicando esses dois js fará com que os navegadores mais antigos consigam interpretar as novas tags do Html5. Os mesmo encontram-se na pasta "html5-js" dentro da pasta do projeto.
+Aplicando esses dois js fará com que os navegadores mais antigos consigam interpretar as novas tags do HTML5. Os mesmos se encontram no diretório "html5-js".
 
 HTML base e Chamada js
 ===============================
 
-Html base do plugin:
+#####HTML base do plugin:
 
-	<section id="highlight">
-       <section class="wrapHighlight">
-          <ul class="listCont">
-            <li>
-              <div class="cont">
-                <a href="#" target="_blank">
-                  <img src="imgs.jpg" alt="Imagem 1"/>
-                  <div class="title_lp">Título da Imagem 1</div>
-                </a>
-              </div>
-            </li><!-- block -->
-          </ul>
-        </section><!-- wrapHighlight -->
-    </section><!-- highlight -->
+```html
+<section id="highlight">
+   <section class="wrapHighlight">
+      <ul class="listCont">
+        <li>
+          <div class="cont">
+            <a href="#" target="_blank">
+              <img src="imgs.jpg" alt="Imagem 1"/>
+              <div class="title_lp">Título da Imagem 1</div>
+            </a>
+          </div>
+        </li><!-- block -->
+      </ul>
+    </section><!-- wrapHighlight -->
+</section><!-- highlight -->
+```
 
-Chamada base do plugin:
+#####Chamada base do plugin:
 
-	$(function(){
-		$("#highlight").slideLp();
-	});
+```javascript
+$("#highlight").slideLp();
+```
 
-Chamada usando as configurações do plugin:
+#####Chamada usando as configurações do plugin:
 
- 	$(function(){
-		$("#highlight").slideLp({
-			auto: true,
-			timeBanner: "5000",
-			effects: "page",
-			timeDelay: "200"
-		});
-	});
+```javascript
+$("#highlight").slideLp({
+    auto: true,
+    timeBanner: "5000",
+    effects: "page",
+    timeDelay: "200"
+});
+```
 
 Configurações
 ===============================
 
-O slideLp foi desenvolvido com a capacidade de poder abilitar ou desabilitar algumas funcionalidades.
+O slideLp foi desenvolvido com a capacidade de poder habilitar ou desabilitar algumas funcionalidades.
 <table width="100%">
 	<tr>	
 		<td>Sintaxe</td>
